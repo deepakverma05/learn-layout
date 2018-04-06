@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#" id="myo2">MyO2</a></li>
+			<li><a>My Device</a></li>
+			<li><a>Top Up</a></li>
+			<li><a>My Orders</a></li>
+		</ul>
+	</nav>
+<div class="side-panel-burger-icon"></div>
+	<aside class="side-panel">
+		<ul>
+			<li class="side-panel-close">close</li>
+			<li><a href="#">MyO2</a></li>
+			<li><a>My Device</a></li>
+			<li><a>Top Up</a></li>
+			<li><a>My Orders</a></li>
+		</ul>
+	</aside>
+	<div class="overlay-container">
+		<div class="dialog-box">
+			<div class="dialog-head">
+				<h1>this is dialog box</h1>
+				<div class="close-btn">X</div>
+			</div>
+			<div class="dialog-body">
+				thisis dialog body
+			</div>
+		</div>
+
+		<div class="overlay"></div>
+	</div>
+
+<script type="text/javascript">
+	document.querySelector('#myo2').onclick=()=>{
+		document.querySelector('.overlay-container').classList.add('active');
+	}
+	document.querySelector('.close-btn').onclick=()=>{
+		document.querySelector('.overlay-container').classList.remove('active');
+	}
+	document.querySelector('.side-panel-burger-icon').onclick=()=>{
+		document.querySelector('.side-panel').classList.add('active');
+	}
+	document.querySelector('.side-panel-close').onclick=()=>{
+		document.querySelector('.side-panel').classList.remove('active');
+	}
+
+</script>
+</body>
+</html>
